@@ -44,14 +44,12 @@ function showDealB() {
   $(".hit").css('visibility','hidden');
   $(".stand").css('visibility','hidden');
   $(".deal").css('visibility','visible');
-  $(".reload").css('visibility','visible');
 }
 
 function showHitStandB() {
   $(".hit").css('visibility','visible');
   $(".stand").css('visibility','visible');
   $(".deal").css('visibility','hidden');
-  $(".reload").css('visibility','hidden');
 }
 
 function lessSeventeen() {
@@ -222,15 +220,10 @@ function standStill() {
   };
 };
 
-function roundAgain() {
-  location.reload();
-}
-
 $(document).ready(function(){
   $(".deal").on('click', play);
   $(".hit").on('click', hitIt);
   $(".stand").on('click',standStill);
-  $(".reload").on('click', roundAgain);
 });
 
 /*  $(".stand").on('click', function(){

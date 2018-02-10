@@ -53,7 +53,7 @@ span {
   line-height: 2.5;
 }
 
-.hit, .stand, .reload {
+.hit, .stand {
   visibility: hidden;
 }
 
