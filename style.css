@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #2d712d;
+}
+
+h1 {
+  font-size: 90px;
+  position: relative;
+  top: -40px;
+  left: 50px;
+  z-index: 5;
+}
+
+h1.shadow {
+  color: white;
+  display: inline;
+  position: relative;
+  top: -205px;
+  left: 50px;
+  z-index: 4;
+}
+
+span {
+  font-size: 23px;
+
+}
+
+.buttons {
+  display: grid;
+/*border: 3px solid black;*/
+  height: 500px;
+  width: 200px;
+  grid-template: 1fr 1fr 1fr / 1fr;
+  align-items: center;
+  justify-items: center;
+  position: relative;
+  top: -170px;
+  left: 50px;
+}
+
+.button {
+  font-size: 25px;
+  color: whitesmoke;
+  background-color: #50a754;
+  height: 70px;
+  width: 120px;
+  border: 3px solid #169428;
+  border-radius: 10px;
+  text-align: center;
+  align-items: center;
+  line-height: 2.5;
+}
+
+.hit, .stand, .reload {
+  visibility: hidden;
+}
+
+.hand {
+  display: grid;
+  /*border: 2px groove whitesmoke;
+  border-radius: 10px;*/
+  height: 250px;
+  width: 266px;
+  grid-template: 250px / repeat(11, 90px);
+}
+
+.dealer {
+  position: absolute;
+  top: 135px;
+  left: 300px;
+  align-items: center;
+  justify-items: left;
+  padding-left: 6px;
+}
+
+.deck {
+  display: grid;
+  grid-template: 1fr / 1fr;
+  border: 2px groove whitesmoke;
+  padding: 6px 24px 6px 6px;
+  border-radius: 10px;
+  position: absolute;
+  top: 460px;
+  left: 325px;
+  justify-items: left;
+}
+
+.player {
+  position: absolute;
+  top: 462px;
+  left: 600px;
+  align-items: center;
+  justify-items: left;
+  padding-left: 6px;
+
+}
+
+.card .a .c {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.card .b .d {
+  grid-area: 1 / 2 / 2 / 3;
+}
